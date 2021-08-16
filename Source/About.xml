@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>RimUniverse - Core</name>
+  <author>Balthoraz</author>
+  <packageId>Balthoraz.RimUniverse.CoreModule</packageId>
+  <supportedVersions>
+    <li>1.2</li>
+  </supportedVersions>
+  <description>Expand your RimWorld into the next level with this complete overhaul.
+	  This mod expands RimWorld using unique features and other community mods integrated together to bring you a new experience and easy management of them.
+
+	  This a Core Module, used as framework for all other modules.
+	</description>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>Ludeon.RimWorld.Royalty</li>
+  </loadAfter>
+</ModMetaData>

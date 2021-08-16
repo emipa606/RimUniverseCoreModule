@@ -1,0 +1,17 @@
+RIMUNIVERSE - CHANGELOG
+===============================================================================================================================
+
+v1.01.0057 - BIOMES MODULE
+ - Update of weather, wildAnimals and wildPlants for each biome.
+
+v1.01.0054 - BIOMES MODULE
+ - Added WaterFreezes: Rivers, Lakes, Marsh water and coastal water will freeze on extreme cold temperature.
+
+v1.01.0047 - BIOMES MODULE
+ - Includes five new biomes: Permafrost, Moist Deciduous Forest, Woodlands, Grasslands and Savanna.
+ - Overrides completely they way the game choose the tile for each biome to give a more natural feel based on Whittaker's Biome Diagram.
+
+v1.00.0016 - CORE MODULE
+ - Integrated "Show Mod Designators" by Erdelf.
+
+

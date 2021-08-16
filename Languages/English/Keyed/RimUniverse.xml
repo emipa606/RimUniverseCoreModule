@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Core -->
+  <RimUniverse>RimUniverse</RimUniverse>
+  <!-- Core Module -->
+  <Settings.CoreModule>Core Module</Settings.CoreModule>
+  <Settings.Submods>Submods</Settings.Submods>
+  <ShowModDesignators>Show Mod Designators</ShowModDesignators>
+  <ShowModDesignatorsTip>Adds a new line at the end of the description with the name of the mod.</ShowModDesignatorsTip>
+  <!-- Biomes Module -->
+  <Settings.BiomesModule>Biomes Module</Settings.BiomesModule>
+  <Settings.Biomes>Biomes</Settings.Biomes>
+  <WaterResponsive>Water Responsive</WaterResponsive>
+  <WaterResponsiveTip>Rivers, lakes, marsh water and coastal water will respond to the extreme climate freezing the water on temperatures below cero.</WaterResponsiveTip>
+  <Biome.AridShrubland>Arid Shrubland</Biome.AridShrubland>
+  <Biome.BorealForest>Boreal Forest</Biome.BorealForest>
+  <Biome.ColdBog>Cold Bog</Biome.ColdBog>
+  <Biome.Desert>Desert</Biome.Desert>
+  <Biome.ExtremeDesert>Extreme Desert</Biome.ExtremeDesert>
+  <Biome.Grassland>Grassland</Biome.Grassland>
+  <Biome.IceSheet>Ice Sheet</Biome.IceSheet>
+  <Biome.MoistDeciduousForest>Moist Deciduous Forest</Biome.MoistDeciduousForest>
+  <Biome.Permafrost>Permafrost</Biome.Permafrost>
+  <Biome.Savanna>Savanna</Biome.Savanna>
+  <Biome.TemperateForest>Temperate Forest</Biome.TemperateForest>
+  <Biome.TemperateSwamp>Temperate Swamp</Biome.TemperateSwamp>
+  <Biome.TropicalRainforest>Tropical Rainforest</Biome.TropicalRainforest>
+  <Biome.TropicalSwamp>Tropical Swamp</Biome.TropicalSwamp>
+  <Biome.Tundra>Tundra</Biome.Tundra>
+  <Biome.Woodland>Woodland</Biome.Woodland>
+</LanguageData>
