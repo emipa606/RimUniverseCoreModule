@@ -2,6 +2,7 @@
 <LanguageData>
   <!-- Core -->
   <RimUniverse>RimUniverse</RimUniverse>
+  <RimUniverse.Version>Installed mod-version: {0}</RimUniverse.Version>
   <!-- Core Module -->
   <Settings.CoreModule>Core Module</Settings.CoreModule>
   <Settings.Submods>Submods</Settings.Submods>
