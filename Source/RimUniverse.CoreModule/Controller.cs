@@ -15,8 +15,7 @@ public class Controller : Mod
         Settings = GetSettings<Settings>();
         Log.Message("RimUniverse: Loaded successfully");
         currentVersion =
-            VersionFromManifest.GetVersionFromModMetaData(
-                ModLister.GetActiveModWithIdentifier("Mlie.RimUniverseCoreModule"));
+            VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
     }
 
     public override void DoSettingsWindowContents(Rect inRect)
