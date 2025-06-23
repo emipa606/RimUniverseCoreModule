@@ -8,13 +8,13 @@ namespace RimUniverse.CoreModule;
 public class Controller : Mod
 {
     public static Settings Settings;
-    public static string currentVersion;
+    public static string CurrentVersion;
 
     public Controller(ModContentPack content) : base(content)
     {
         Settings = GetSettings<Settings>();
         Log.Message("RimUniverse: Loaded successfully");
-        currentVersion =
+        CurrentVersion =
             VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
     }
 

@@ -5,57 +5,57 @@ namespace RimUniverse.CoreModule;
 
 public class Settings : ModSettings
 {
-    public bool showModDesignators = true;
-    public bool waterResponsive = true;
+    public bool ShowModDesignators = true;
+    private bool waterResponsive = true;
 
     public void DoWindowContents(Rect inRect)
     {
         var rect = inRect.width - 50f;
-        var listing_Standard = new Listing_Standard { ColumnWidth = rect };
-        listing_Standard.Begin(inRect);
-        listing_Standard.ButtonImage(Resources.SettingsHeader, 850f, 128f);
-        listing_Standard.GapLine();
-        listing_Standard.Gap(5f);
+        var listingStandard = new Listing_Standard { ColumnWidth = rect };
+        listingStandard.Begin(inRect);
+        listingStandard.ButtonImage(Resources.SettingsHeader, 850f, 128f);
+        listingStandard.GapLine();
+        listingStandard.Gap(5f);
         GUI.color = Color.cyan;
-        listing_Standard.Label("Settings.CoreModule".Translate());
+        listingStandard.Label("Settings.CoreModule".Translate());
         GUI.color = Color.green;
-        listing_Standard.Label("Settings.Submods".Translate());
-        listing_Standard.Gap(5f);
+        listingStandard.Label("Settings.Submods".Translate());
+        listingStandard.Gap(5f);
         GUI.color = Color.white;
-        listing_Standard.CheckboxLabeled("ShowModDesignators".Translate(), ref showModDesignators,
+        listingStandard.CheckboxLabeled("ShowModDesignators".Translate(), ref ShowModDesignators,
             "ShowModDesignatorsTip".Translate());
-        listing_Standard.GapLine();
-        listing_Standard.Gap(10f);
+        listingStandard.GapLine();
+        listingStandard.Gap(10f);
 
 
-        if (ModLister.GetActiveModWithIdentifier("Mlie.RimUniverseBiomes") != null)
+        if (ModLister.GetActiveModWithIdentifier("Mlie.RimUniverseBiomes", true) != null)
         {
             GUI.color = Color.cyan;
-            listing_Standard.Label("Settings.BiomesModule".Translate());
+            listingStandard.Label("Settings.BiomesModule".Translate());
             GUI.color = Color.green;
-            listing_Standard.Label("Settings.Submods".Translate());
+            listingStandard.Label("Settings.Submods".Translate());
             GUI.color = Color.white;
-            listing_Standard.CheckboxLabeled("WaterResponsive".Translate(), ref waterResponsive,
+            listingStandard.CheckboxLabeled("WaterResponsive".Translate(), ref waterResponsive,
                 "WaterResponsiveTip".Translate());
-            listing_Standard.Gap(4f);
-            listing_Standard.GapLine();
+            listingStandard.Gap(4f);
+            listingStandard.GapLine();
         }
 
-        if (Controller.currentVersion != null)
+        if (Controller.CurrentVersion != null)
         {
-            listing_Standard.Gap();
+            listingStandard.Gap();
             GUI.contentColor = Color.gray;
-            listing_Standard.Label("RimUniverse.Version".Translate(Controller.currentVersion));
+            listingStandard.Label("RimUniverse.Version".Translate(Controller.CurrentVersion));
             GUI.contentColor = Color.white;
         }
 
-        listing_Standard.End();
+        listingStandard.End();
     }
 
     public override void ExposeData()
     {
         base.ExposeData();
-        Scribe_Values.Look(ref showModDesignators, "ShowModDesignators", true);
+        Scribe_Values.Look(ref ShowModDesignators, "ShowModDesignators", true);
         Scribe_Values.Look(ref waterResponsive, "WaterResponsive", true);
     }
 }

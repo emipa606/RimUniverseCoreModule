@@ -11,7 +11,7 @@ public class ShowModDesignators
 {
     static ShowModDesignators()
     {
-        if (Controller.Settings.showModDesignators.Equals(false))
+        if (Controller.Settings.ShowModDesignators.Equals(false))
         {
             return;
         }
