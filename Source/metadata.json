@@ -3,7 +3,13 @@
   "CanAdd": "0",
   "CanRemove": "0",
   "PreviewVersion": "1.6",
-  "LastXmlCleaning": "2025-06-23T22:17:12.3348365+02:00",
+  "LastXmlCleaning": "2025-08-03T11:35:38.4263661+02:00",
   "SocialImageSet": true,
-  "SearchTags": " integration"
+  "SearchTags": " integration",
+  "Patches": false,
+  "Defs": false,
+  "Assemblies": true,
+  "LinesOfCode": 6450,
+  "LinesOfXML": 0,
+  "CodeBaseSize": 60
 }

@@ -6,7 +6,9 @@ namespace RimUniverse.CoreModule;
 public class Settings : ModSettings
 {
     public bool ShowModDesignators = true;
-    private bool waterResponsive = true;
+
+    // ReSharper disable once MemberCanBePrivate.Global
+    public bool WaterResponsive = ModLister.OdysseyInstalled;
 
     public void DoWindowContents(Rect inRect)
     {
@@ -28,17 +30,21 @@ public class Settings : ModSettings
         listingStandard.Gap(10f);
 
 
-        if (ModLister.GetActiveModWithIdentifier("Mlie.RimUniverseBiomes", true) != null)
+        if (ModLister.GetActiveModWithIdentifier("Mlie.RimUniverseBiomes", true) != null && !ModLister.OdysseyInstalled)
         {
             GUI.color = Color.cyan;
             listingStandard.Label("Settings.BiomesModule".Translate());
             GUI.color = Color.green;
             listingStandard.Label("Settings.Submods".Translate());
             GUI.color = Color.white;
-            listingStandard.CheckboxLabeled("WaterResponsive".Translate(), ref waterResponsive,
+            listingStandard.CheckboxLabeled("WaterResponsive".Translate(), ref WaterResponsive,
                 "WaterResponsiveTip".Translate());
             listingStandard.Gap(4f);
             listingStandard.GapLine();
+        }
+        else
+        {
+            WaterResponsive = false;
         }
 
         if (Controller.CurrentVersion != null)
@@ -56,6 +62,6 @@ public class Settings : ModSettings
     {
         base.ExposeData();
         Scribe_Values.Look(ref ShowModDesignators, "ShowModDesignators", true);
-        Scribe_Values.Look(ref waterResponsive, "WaterResponsive", true);
+        Scribe_Values.Look(ref WaterResponsive, "WaterResponsive", true);
     }
 }
