@@ -13,7 +13,6 @@ public class Controller : Mod
     public Controller(ModContentPack content) : base(content)
     {
         Settings = GetSettings<Settings>();
-        Log.Message("RimUniverse: Loaded successfully");
         CurrentVersion =
             VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
     }
